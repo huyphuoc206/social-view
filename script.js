@@ -25269,6 +25269,7 @@ document.getElementById("traderId").addEventListener("input", () => {
           "traderId"
         ).value = `${trader.name} (${trader.account})`;
         suggestions.innerHTML = "";
+        document.getElementById("viewButton").click();
       });
       suggestions.appendChild(li);
     });
