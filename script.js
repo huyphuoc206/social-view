@@ -25387,3 +25387,11 @@ document.getElementById("viewButton").addEventListener("click", () => {
     viewButton.classList.remove("disabled"); // Remove disabled class
   }
 });
+
+document.getElementById("clearButton").addEventListener("click", () => {
+  document.getElementById("traderId").value = "";
+  document.getElementById("suggestions").innerHTML = "";
+  document.getElementById("ordersTable").querySelector("tbody").innerHTML = "";
+  document.getElementById("totalProfit").textContent = "0$";
+  document.getElementById("totalProfit").className = "profit default";
+});

@@ -94,6 +94,28 @@ body {
     cursor: not-allowed;
   }
   
+  /* Clear Button */
+  #clearButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d76161;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+  }
+  
+  #clearButton:hover {
+    background-color: #cc0000;
+  }
+  
+  #clearButton.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
   /* Total Profit Container */
   #totalProfitContainer {
     display: flex;
