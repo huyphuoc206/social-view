@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Viewer</title>
+    <link rel="stylesheet" href="style-dark.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Social Viewer</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="traderId"
+          placeholder="Enter Trader ID or Name"
+          autocomplete="off"
+        />
+
+        <ul id="suggestions"></ul>
+        <button id="viewButton">View</button>
+      </div>
+      <div id="totalProfitContainer">
+        <span>Total Profit: </span>&nbsp;<span
+          id="totalProfit"
+          class="profit default"
+          >0$</span
+        >
+      </div>
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th>Account</th>
+            <th>Symbol</th>
+            <th>Trade Type</th>
+            <th>Open Price</th>
+            <th>Open Date & Time</th>
+            <th>Size</th>
+            <th>Profit</th>
+            <th>Current Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here dynamically -->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
