@@ -1,0 +1,13 @@
+{
+  "name": "social-view",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.3.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {}
+}
