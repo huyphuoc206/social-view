@@ -25294,6 +25294,8 @@ document.getElementById("viewButton").addEventListener("click", () => {
   viewButton.classList.add("disabled");
 
   if (traderId) {
+    console.log('he');
+    
     fetch(
       `https://www.social-trading.club/st/v1/managers/accounts/${traderId}/open-trades`
     )
